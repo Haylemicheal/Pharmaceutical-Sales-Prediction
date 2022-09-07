@@ -1,2 +1,5 @@
 [core]
     autostage = true
+    remote = pharmadata
+['remote "pharmadata"']
+    url = gdrive://1BN_A8RnHW0P48jkwXPL3CAeaYwWhs0gf
