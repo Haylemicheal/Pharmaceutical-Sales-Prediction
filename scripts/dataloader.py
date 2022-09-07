@@ -18,5 +18,5 @@ class DataLoader:
            Return:
                 df: pandas dataframe
         """
-        df = pd.read_csv(path)
+        df = pd.read_csv(path, sep=",", low_memory=False)
         return df
