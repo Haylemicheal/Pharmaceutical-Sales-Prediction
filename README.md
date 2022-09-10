@@ -29,6 +29,8 @@ The data for this challenge can be found [here](https://drive.google.com/file/d/
 - notebooks: Contains Jupyter notebooks
 - models: Contains the trained models
 - tests: Unit test files
+- ui: Streamlit app
+- database: data persistence using mysql
 - .github/workflows- Contains yml configration file of github acyion
 - .dvc: Data versioning related configration and files
 - .travis.yml: Contains config file for travis ci/cd 
