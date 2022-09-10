@@ -4,6 +4,8 @@ import sys
 
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import FunctionTransformer
+from sklearn.preprocessing import LabelEncoder
+from sklearn.preprocessing import Normalizer, MinMaxScaler, StandardScaler
 import logging as log
 
 log.basicConfig(filename="../logs/preprocess.txt", format = '%(asctime)s:%(levelname)s:%(name)s:%(message)s')
