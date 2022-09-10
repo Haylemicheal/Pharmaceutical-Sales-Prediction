@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 import logging as log
 import pandas as pd
+import sys, os, io
+sys.path.append(os.path.abspath(os.path.join('..')))
+from scripts.modeling import Model
 
 log.basicConfig(filename='../logs/dataloader.txt', format = '%(asctime)s:%(levelname)s:%(name)s:%(message)s')
 
