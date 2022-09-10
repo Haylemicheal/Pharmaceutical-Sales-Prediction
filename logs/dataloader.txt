@@ -1,0 +1,29 @@
+2022-09-10 15:04:08,447:INFO:sqlalchemy.engine.Engine:SELECT COUNT(*) FROM information_schema.tables WHERE table_schema = %(table_schema)s AND table_name = %(table_name)s
+2022-09-10 15:04:08,447:INFO:sqlalchemy.engine.Engine:[generated in 0.00016s] {'table_schema': 'sales', 'table_name': 'Sales_Data'}
+2022-09-10 15:04:08,457:INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+2022-09-10 15:04:08,457:INFO:sqlalchemy.engine.Engine:
+CREATE TABLE `Sales_Data` (
+	`index` BIGINT, 
+	`Store` BIGINT, 
+	`StoreType` TEXT, 
+	`Assortment` TEXT, 
+	`CompetitionDistance` FLOAT(53), 
+	`CompetitionOpenSinceMonth` FLOAT(53), 
+	`CompetitionOpenSinceYear` FLOAT(53), 
+	`Promo2` BIGINT, 
+	`Promo2SinceWeek` FLOAT(53), 
+	`Promo2SinceYear` FLOAT(53), 
+	`PromoInterval` TEXT
+)
+
+
+2022-09-10 15:04:08,457:INFO:sqlalchemy.engine.Engine:[no key 0.00008s] {}
+2022-09-10 15:04:08,474:INFO:sqlalchemy.engine.Engine:CREATE INDEX `ix_Sales_Data_index` ON `Sales_Data` (`index`)
+2022-09-10 15:04:08,474:INFO:sqlalchemy.engine.Engine:[no key 0.00011s] {}
+2022-09-10 15:04:08,490:INFO:sqlalchemy.engine.Engine:COMMIT
+2022-09-10 15:04:08,492:INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+2022-09-10 15:04:08,499:INFO:sqlalchemy.engine.Engine:INSERT INTO `Sales_Data` (`index`, `Store`, `StoreType`, `Assortment`, `CompetitionDistance`, `CompetitionOpenSinceMonth`, `CompetitionOpenSinceYear`, `Promo2`, `Promo2SinceWeek`, `Promo2SinceYear`, `PromoInterval`) VALUES (%(index)s, %(Store)s, %(StoreType)s, %(Assortment)s, %(CompetitionDistance)s, %(CompetitionOpenSinceMonth)s, %(CompetitionOpenSinceYear)s, %(Promo2)s, %(Promo2SinceWeek)s, %(Promo2SinceYear)s, %(PromoInterval)s)
+2022-09-10 15:04:08,499:INFO:sqlalchemy.engine.Engine:[generated in 0.00493s] ({'index': 0, 'Store': 1, 'StoreType': 'c', 'Assortment': 'a', 'CompetitionDistance': 1270.0, 'CompetitionOpenSinceMonth': 9.0, 'CompetitionOpenSinceYear': 2008.0, 'Promo2': 0, 'Promo2SinceWeek': None, 'Promo2SinceYear': None, 'PromoInterval': None}, {'index': 1, 'Store': 2, 'StoreType': 'a', 'Assortment': 'a', 'CompetitionDistance': 570.0, 'CompetitionOpenSinceMonth': 11.0, 'CompetitionOpenSinceYear': 2007.0, 'Promo2': 1, 'Promo2SinceWeek': 13.0, 'Promo2SinceYear': 2010.0, 'PromoInterval': 'Jan,Apr,Jul,Oct'}, {'index': 2, 'Store': 3, 'StoreType': 'a', 'Assortment': 'a', 'CompetitionDistance': 14130.0, 'CompetitionOpenSinceMonth': 12.0, 'CompetitionOpenSinceYear': 2006.0, 'Promo2': 1, 'Promo2SinceWeek': 14.0, 'Promo2SinceYear': 2011.0, 'PromoInterval': 'Jan,Apr,Jul,Oct'}, {'index': 3, 'Store': 4, 'StoreType': 'c', 'Assortment': 'c', 'CompetitionDistance': 620.0, 'CompetitionOpenSinceMonth': 9.0, 'CompetitionOpenSinceYear': 2009.0, 'Promo2': 0, 'Promo2SinceWeek': None, 'Promo2SinceYear': None, 'PromoInterval': None}, {'index': 4, 'Store': 5, 'StoreType': 'a', 'Assortment': 'a', 'CompetitionDistance': 29910.0, 'CompetitionOpenSinceMonth': 4.0, 'CompetitionOpenSinceYear': 2015.0, 'Promo2': 0, 'Promo2SinceWeek': None, 'Promo2SinceYear': None, 'PromoInterval': None}, {'index': 5, 'Store': 6, 'StoreType': 'a', 'Assortment': 'a', 'CompetitionDistance': 310.0, 'CompetitionOpenSinceMonth': 12.0, 'CompetitionOpenSinceYear': 2013.0, 'Promo2': 0, 'Promo2SinceWeek': None, 'Promo2SinceYear': None, 'PromoInterval': None}, {'index': 6, 'Store': 7, 'StoreType': 'a', 'Assortment': 'c', 'CompetitionDistance': 24000.0, 'CompetitionOpenSinceMonth': 4.0, 'CompetitionOpenSinceYear': 2013.0, 'Promo2': 0, 'Promo2SinceWeek': None, 'Promo2SinceYear': None, 'PromoInterval': None}, {'index': 7, 'Store': 8, 'StoreType': 'a', 'Assortment': 'a', 'CompetitionDistance': 7520.0, 'CompetitionOpenSinceMonth': 10.0, 'CompetitionOpenSinceYear': 2014.0, 'Promo2': 0, 'Promo2SinceWeek': None, 'Promo2SinceYear': None, 'PromoInterval': None}  ... displaying 10 of 1115 total bound parameter sets ...  {'index': 1113, 'Store': 1114, 'StoreType': 'a', 'Assortment': 'c', 'CompetitionDistance': 870.0, 'CompetitionOpenSinceMonth': None, 'CompetitionOpenSinceYear': None, 'Promo2': 0, 'Promo2SinceWeek': None, 'Promo2SinceYear': None, 'PromoInterval': None}, {'index': 1114, 'Store': 1115, 'StoreType': 'd', 'Assortment': 'c', 'CompetitionDistance': 5350.0, 'CompetitionOpenSinceMonth': None, 'CompetitionOpenSinceYear': None, 'Promo2': 1, 'Promo2SinceWeek': 22.0, 'Promo2SinceYear': 2012.0, 'PromoInterval': 'Mar,Jun,Sept,Dec'})
+2022-09-10 15:04:08,536:INFO:sqlalchemy.engine.Engine:COMMIT
+2022-09-10 15:04:08,539:INFO:sqlalchemy.engine.Engine:SHOW FULL TABLES FROM `sales`
+2022-09-10 15:04:08,539:INFO:sqlalchemy.engine.Engine:[raw sql] {}
